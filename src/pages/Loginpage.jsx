@@ -26,6 +26,10 @@ const Loginpage = () => {
     }
   };
 
+  const handleRegister = () => {
+    navigate("/register"); // Ganti dengan path halaman tujuan
+  };
+
   return (
     <form onSubmit={handleSubmit}>
       <div>
@@ -50,6 +54,7 @@ const Loginpage = () => {
       </div>
       {error && <p style={{ color: "red" }}>{error}</p>}
       <button type="submit">Login</button>
+      <button onClick={handleRegister}>Register</button>
     </form>
   );
 };
