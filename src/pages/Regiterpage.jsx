@@ -25,7 +25,7 @@ const Registerpage = () => {
       console.log("ini res:", response);
       if (response.status === 200) {
         setSuccess("Registration successful. Please log in.");
-        navigate("/login");
+        navigate("/");
       }
     } catch (err) {
       setError("Registration failed. Please try again.");
