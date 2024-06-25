@@ -53,8 +53,10 @@ const Loginpage = () => {
         />
       </div>
       {error && <p style={{ color: "red" }}>{error}</p>}
-      <button type="submit">Login</button>
-      <button onClick={handleRegister}>Register</button>
+      <div style={{ display: "flex", gap: "5px" }}>
+        <button type="submit">Login</button>
+        <button onClick={handleRegister}>Register</button>
+      </div>
     </form>
   );
 };
