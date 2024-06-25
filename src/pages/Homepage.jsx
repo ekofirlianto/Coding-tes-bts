@@ -59,11 +59,11 @@ const Homepage = () => {
       <ul>
         {checklist?.data?.map((item) => (
           <li key={item.id}>
-            <input
+            {/* <input
               type="checkbox"
               checked={checkedItems[item.id] || false}
               onChange={() => handleCheckboxChange(item.id)}
-            />
+            /> */}
             {item.name}
             <button
               className="delete-button"
